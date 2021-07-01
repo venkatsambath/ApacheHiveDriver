@@ -18,7 +18,7 @@ public class ApacheHive
         final Connection con = DriverManager.getConnection("jdbc:hive2://host-10-17-102-106.coe.cloudera.com:10000/;principal=hive/_HOST@C6CITIDSE.COM");
         final Statement stmt = con.createStatement();
         stmt.setFetchSize(10000);
-
+        stmt.setMaxRows(10000);
         ResultSet res = stmt.executeQuery("select * from airline_data.airlines_1million limit 370000");
         long time_1 = System.currentTimeMillis();
         while (res.next()) {
