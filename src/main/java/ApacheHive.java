@@ -15,7 +15,7 @@ public class ApacheHive
             e.printStackTrace();
             System.exit(1);
         }
-        final Connection con = DriverManager.getConnection("jdbc:hive2://host-10-17-102-106.coe.cloudera.com:10000/;principal=hive/_HOST@C6CITIDSE.COM");
+        final Connection con = DriverManager.getConnection("jdbc:hive2://xxxx:10000/;principal=hive/_HOST@C6CITIDSE.COM");
         final Statement stmt = con.createStatement();
         stmt.setFetchSize(10000);
         stmt.setMaxRows(10000);
