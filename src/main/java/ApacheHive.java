@@ -27,6 +27,7 @@ public class ApacheHive
         long time_2 = System.currentTimeMillis();
         long difference = time_1 - time_2;
         System.out.println( difference + "milliseconds" );
+        System.out.println( difference + "Tom" );
 
     }
 }
